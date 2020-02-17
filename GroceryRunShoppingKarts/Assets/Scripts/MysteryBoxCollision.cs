@@ -8,10 +8,10 @@ public class MysteryBoxCollision : MonoBehaviour
     {
         DontDestroyOnLoad(this.gameObject);
     }
-    void OnTriggerStay(Collider collider)
+
+    void OnTriggerEnter(Collider collider)
     {
-        Debug.Log(collider.gameObject);
-        if(collider.gameObject.tag == "MysteryBox")
+        if (collider.gameObject.tag == "MysteryBox")
         {
             StartCoroutine(MyCoroutine(collider));
         }

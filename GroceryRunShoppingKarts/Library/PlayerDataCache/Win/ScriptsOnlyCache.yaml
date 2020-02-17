@@ -72,23 +72,23 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10390}
     - Class: 114
-      Script: {instanceID: 10774}
+      Script: {instanceID: 10776}
     - Class: 114
-      Script: {instanceID: 11012}
+      Script: {instanceID: 11014}
     - Class: 114
-      Script: {instanceID: 11026}
+      Script: {instanceID: 11028}
     - Class: 114
-      Script: {instanceID: 11224}
+      Script: {instanceID: 11228}
     - Class: 114
-      Script: {instanceID: 11292}
+      Script: {instanceID: 11296}
     - Class: 114
-      Script: {instanceID: 11472}
+      Script: {instanceID: 11476}
     - Class: 114
-      Script: {instanceID: 11590}
-    - Class: 114
-      Script: {instanceID: 11686}
+      Script: {instanceID: 11594}
     - Class: 114
       Script: {instanceID: 11692}
+    - Class: 114
+      Script: {instanceID: 11698}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -163,23 +163,23 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10362}
     - Class: 114
-      Script: {instanceID: 10712}
+      Script: {instanceID: 10708}
     - Class: 114
-      Script: {instanceID: 10846}
+      Script: {instanceID: 10714}
     - Class: 114
-      Script: {instanceID: 11158}
+      Script: {instanceID: 10848}
     - Class: 114
-      Script: {instanceID: 11164}
+      Script: {instanceID: 11162}
     - Class: 114
-      Script: {instanceID: 11230}
+      Script: {instanceID: 11168}
     - Class: 114
-      Script: {instanceID: 11334}
+      Script: {instanceID: 11234}
     - Class: 114
-      Script: {instanceID: 11692}
+      Script: {instanceID: 11338}
     - Class: 114
-      Script: {instanceID: 95536}
+      Script: {instanceID: 11630}
     - Class: 114
-      Script: {instanceID: 105944}
+      Script: {instanceID: 11698}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 137
@@ -727,6 +727,12 @@ ScriptsOnlyBuild:
     className: ObjectResetter
   - hash:
       serializedVersion: 2
+      Hash: 02257785ce288ee016f031b3760c4262
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MysteryBoxLogic
+  - hash:
+      serializedVersion: 2
       Hash: 9df954eca51e9f2b95915ae2918e4258
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: UnityStandardAssets.Effects
@@ -1220,6 +1226,12 @@ ScriptsOnlyBuild:
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MysteryBoxCollision
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: BaseInput
@@ -1301,18 +1313,6 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: UnityStandardAssets.Utility
     className: AutoMobileShaderSwitch
-  - hash:
-      serializedVersion: 2
-      Hash: 02257785ce288ee016f031b3760c4262
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: MysteryBoxLogic
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: MysteryBoxCollision
   platform: 5
   scenePathNames:
   - Assets/Scenes/MainMenu.unity
