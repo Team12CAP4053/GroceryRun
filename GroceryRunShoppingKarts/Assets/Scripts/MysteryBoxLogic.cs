@@ -8,16 +8,15 @@ public class MysteryBoxLogic : MonoBehaviour
     //adjust this to change speed
     public float speed = 3f;
     //adjust this to change how high it goes
-    public float height = 5f;
+    public float height = 0.5f;
     // Update is called once per frame
-    float rotation = 0;
     void Update()
     {
-
-        rotation += 0.5f;
-        Quaternion target = Quaternion.Euler(0, rotation, 0);
-
-        // Dampen towards the target rotation
-        transform.rotation = Quaternion.Slerp(transform.rotation, target, Time.deltaTime * 0.5f);
+        //get the objects current position and put it in a variable so we can access it later with less code
+        Vector3 pos = transform.position;
+        //calculate what the new Y position will be
+        float newY = Mathf.Sin(Time.time * speed) * height;
+        //set the object's Y to the new calculated Y
+        transform.position = new Vector3(pos.x, newY + pos.y, pos.z);
     }
 }
