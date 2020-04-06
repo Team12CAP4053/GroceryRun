@@ -4,5 +4,6 @@
 	"hard_speed": 220,
 	"easy_level": 1,
 	"normal_level": 3,
-	"hard_level": 5
+	"hard_level": 5,
+	"difficulty": 2
 }
