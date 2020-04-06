@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4428368275693505133}
   m_Layer: 0
   m_Name: Box
-  m_TagString: Untagged
+  m_TagString: MysteryBox
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -140,8 +140,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2, y: 3.5, z: 2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 2.2676544, y: 3.5000012, z: 2.6564636}
+  m_Center: {x: -0.696373, y: 0, z: 0.015792847}
 --- !u!114 &4428368274731286419
 MonoBehaviour:
   m_ObjectHideFlags: 0

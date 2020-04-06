@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Chicken
   description: 
-  weight: 5
-  Visual: {fileID: 21300000, guid: 5b1a64ea234fb2343b8d0686c51280de, type: 3}
+  weight: 4
+  Visual: {fileID: 21300000, guid: 4a1d681eaa722d84ab099083007f3f11, type: 3}

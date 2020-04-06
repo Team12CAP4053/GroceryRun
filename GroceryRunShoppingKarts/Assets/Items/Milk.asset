@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Milk
   description: 
-  weight: 4
-  Visual: {fileID: 21300000, guid: 49b611e658efbf443b686a4036f74fe3, type: 3}
+  weight: 5
+  Visual: {fileID: 21300000, guid: 7dfd5b8102d2f934fb5d948d8fccc595, type: 3}
