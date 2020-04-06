@@ -43,6 +43,8 @@ public class PlayerFire : MonoBehaviour
                 sphereBulletCollider = bulletObject.GetComponent<SphereCollider>();
                 sphereBulletCollider.radius = 0.07f;
                 sphereBulletCollider.center = new Vector3(0.0f, 0.05f, 0.0f);
+
+                itemVal = -1;
             }
             // Chicken
             else if (itemVal == 1)
@@ -57,6 +59,8 @@ public class PlayerFire : MonoBehaviour
                 bulletObject.GetComponent<Rigidbody>().useGravity = false;
 
                 boxBulletCollider = bulletObject.GetComponent<BoxCollider>();
+
+                itemVal = -1;
             }
             // Milk Jug
             else if (itemVal == 2)
@@ -71,6 +75,8 @@ public class PlayerFire : MonoBehaviour
                 bulletObject.GetComponent<Rigidbody>().useGravity = false;
 
                 boxBulletCollider = bulletObject.GetComponent<BoxCollider>();
+
+                itemVal = -1;
             }
             // Watermelon
             else if (itemVal == 3)
@@ -87,6 +93,12 @@ public class PlayerFire : MonoBehaviour
                 sphereBulletCollider = bulletObject.GetComponent<SphereCollider>();
                 sphereBulletCollider.radius = 0.2f;
                 sphereBulletCollider.center = new Vector3(0.0f, 0.15f, 0.0f);
+
+                itemVal = -1;
+            }
+            else
+            {
+                Debug.Log("Donezo");
             }
         }
     }
