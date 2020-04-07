@@ -29092,8 +29092,7 @@ PrefabInstance:
         type: 3}
       propertyPath: Kart
       value: 
-      objectReference: {fileID: 7715128066219345040, guid: e09f58788b8a9294a90f8e70aae2f696,
-        type: 3}
+      objectReference: {fileID: 458712064}
     - target: {fileID: 3640253743701332382, guid: 8886d6d97281925489fe4d2192d77025,
         type: 3}
       propertyPath: AllItemGraphics.Array.data[0]
