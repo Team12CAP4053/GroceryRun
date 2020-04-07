@@ -21394,6 +21394,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cpIndex: 0
   wrongwayText: {fileID: 0}
+--- !u!114 &848304127 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8920939069256411809, guid: abfcee3139e143b4a8c8e2fd435e3403,
+    type: 3}
+  m_PrefabInstance: {fileID: 1778338255}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 923839b64d8d1484ebb6b5e151da65e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &850147912
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30403,6 +30415,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3170853855567553931, guid: f899fd91cd6b8e44d86deca2c6bc6d51,
+        type: 3}
+      propertyPath: level
+      value: 
+      objectReference: {fileID: 848304127}
     - target: {fileID: 7617261528490431107, guid: f899fd91cd6b8e44d86deca2c6bc6d51,
         type: 3}
       propertyPath: m_LocalPosition.z

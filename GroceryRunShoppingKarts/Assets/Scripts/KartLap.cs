@@ -9,6 +9,9 @@ public class KartLap : MonoBehaviour
     public int checkpointIndex;
     public LapHandle lapHandle;
     public Text lapText;
+    public LevelChanger level;
+    public Text continueText;
+    public Text finishText;
     // Start is called before the first frame update
     void Start()
     {
@@ -32,7 +35,11 @@ public class KartLap : MonoBehaviour
                 lapText.text = "Lap: " + (lapIndex + 1) + "/" + lapHandle.GetMaxLap();
                 if (lapHandle.GetMaxLap() == lapIndex)
                 {
-                    Debug.Log("Donezasdasdo");
+                //Debug.Log("Donezasdasdo");
+                    if (Input.anyKeyDown)
+                    {
+                        level.FadeToNextLevel();
+                    }
                 }
             
             

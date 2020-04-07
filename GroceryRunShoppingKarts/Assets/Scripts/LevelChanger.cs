@@ -15,10 +15,10 @@ public class LevelChanger : MonoBehaviour
             FadeToNextLevel(); 
         }
           
-        if (Input.GetMouseButtonDown(1))
-        {
-            FadeToNextLevel();
-        }
+        //if (Input.GetMouseButtonDown(1))
+        //{
+        //    FadeToNextLevel();
+        //}
     }
 
     public void FadeToNextLevel ()

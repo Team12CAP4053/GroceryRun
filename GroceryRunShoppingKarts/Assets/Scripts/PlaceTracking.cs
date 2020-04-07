@@ -46,7 +46,7 @@ public class PlaceTracking : MonoBehaviour
                 }
             }
         }
-        for (int i = 0; i < pos.Capacity; i++)
+        for (int i = 0; i < pos.Count; i++)
         {
             pos[i].position = i + 1;
         }
