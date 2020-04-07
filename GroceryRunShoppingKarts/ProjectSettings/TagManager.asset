@@ -9,6 +9,7 @@ TagManager:
   - checkout
   - Coin
   - Leonardo
+  - Checkpoint
   layers:
   - Default
   - TransparentFX
