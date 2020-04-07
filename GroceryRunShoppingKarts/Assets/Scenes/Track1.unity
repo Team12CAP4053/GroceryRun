@@ -32049,6 +32049,21 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: -14.45
       objectReference: {fileID: 0}
+    - target: {fileID: 3130186356367001531, guid: f899fd91cd6b8e44d86deca2c6bc6d51,
+        type: 3}
+      propertyPath: checkpoint
+      value: 
+      objectReference: {fileID: 1284460800}
+    - target: {fileID: 3130186356785914700, guid: f899fd91cd6b8e44d86deca2c6bc6d51,
+        type: 3}
+      propertyPath: checkpoint
+      value: 
+      objectReference: {fileID: 1284460800}
+    - target: {fileID: 3130186356838305409, guid: f899fd91cd6b8e44d86deca2c6bc6d51,
+        type: 3}
+      propertyPath: checkpoint
+      value: 
+      objectReference: {fileID: 1284460800}
     - target: {fileID: 3170853855343824625, guid: f899fd91cd6b8e44d86deca2c6bc6d51,
         type: 3}
       propertyPath: m_Name

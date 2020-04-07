@@ -1,7 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityStandardAssets.Vehicles.Car;
+using Settingo;
 public class PlaceTracking : MonoBehaviour
 {
     List<PlayerPosition> cars;
@@ -12,6 +13,7 @@ public class PlaceTracking : MonoBehaviour
         foreach (PlayerPosition child in this.GetComponentsInChildren<PlayerPosition>())
         {
             cars.Add(child);
+            child.gameObject.GetComponent<CarController>().setTopSpeed(GameSetting.setting.getSpeedDifficulty());
         }
     }
 

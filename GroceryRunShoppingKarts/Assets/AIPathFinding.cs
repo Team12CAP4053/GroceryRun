@@ -11,7 +11,6 @@ public class AIPathFinding : MonoBehaviour
     void Start()
     {
         this.GetComponent<CarAIControl>().SetTarget(checkpoint.GetComponent<Transform>());
-
     }
 
     // Update is called once per frame

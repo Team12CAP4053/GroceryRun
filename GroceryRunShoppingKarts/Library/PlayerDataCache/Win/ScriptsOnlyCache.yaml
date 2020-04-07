@@ -1,25 +1,9 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp-firstpass.dll:
-    - UnityStandardAssets.Vehicles.Car.BrakeLight
-    - UnityStandardAssets.Vehicles.Car.CarAudio
-    - UnityStandardAssets.Vehicles.Car.CarController
-    - UnityStandardAssets.Vehicles.Car.CarUserControl
-    - UnityStandardAssets.Vehicles.Car.Mudguard
     - UnityStandardAssets.Vehicles.Car.SkidTrail
-    - UnityStandardAssets.Vehicles.Car.Suspension
-    - UnityStandardAssets.Vehicles.Car.WheelEffects
     Assembly-CSharp.dll:
-    - GameItemsHandle
-    - Item
-    - ItemBlock
-    - ItemUIHandle
-    - KartItem
     - MainMenu
-    - MysteryBoxLogic
-    - PolyPerfect.AIStats
-    - PolyPerfect.AnimSpeed
-    - PolyPerfect.WanderScript
     Unity.TextMeshPro.dll:
     - TMPro.TMP_ColorGradient
     - TMPro.TMP_FontAsset
@@ -70,29 +54,29 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9746}
     - Class: 114
-      Script: {instanceID: 9968}
+      Script: {instanceID: 9972}
     - Class: 114
-      Script: {instanceID: 10378}
+      Script: {instanceID: 10386}
     - Class: 114
-      Script: {instanceID: 10406}
+      Script: {instanceID: 10414}
     - Class: 114
-      Script: {instanceID: 10814}
+      Script: {instanceID: 10826}
     - Class: 114
-      Script: {instanceID: 11068}
+      Script: {instanceID: 11080}
     - Class: 114
-      Script: {instanceID: 11082}
+      Script: {instanceID: 11094}
     - Class: 114
-      Script: {instanceID: 11288}
+      Script: {instanceID: 11300}
     - Class: 114
-      Script: {instanceID: 11358}
+      Script: {instanceID: 11372}
     - Class: 114
-      Script: {instanceID: 11542}
+      Script: {instanceID: 11558}
     - Class: 114
-      Script: {instanceID: 11660}
+      Script: {instanceID: 11676}
     - Class: 114
-      Script: {instanceID: 11756}
+      Script: {instanceID: 11772}
     - Class: 114
-      Script: {instanceID: 11762}
+      Script: {instanceID: 11778}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -106,129 +90,6 @@ ScriptsOnlyBuild:
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
-      Script: {instanceID: 0}
-    Assets/Scenes/OvalTrackLevel.unity:
-    - Class: 1
-      Script: {instanceID: 0}
-    - Class: 4
-      Script: {instanceID: 0}
-    - Class: 20
-      Script: {instanceID: 0}
-    - Class: 21
-      Script: {instanceID: 0}
-    - Class: 23
-      Script: {instanceID: 0}
-    - Class: 28
-      Script: {instanceID: 0}
-    - Class: 33
-      Script: {instanceID: 0}
-    - Class: 43
-      Script: {instanceID: 0}
-    - Class: 48
-      Script: {instanceID: 0}
-    - Class: 54
-      Script: {instanceID: 0}
-    - Class: 64
-      Script: {instanceID: 0}
-    - Class: 65
-      Script: {instanceID: 0}
-    - Class: 74
-      Script: {instanceID: 0}
-    - Class: 81
-      Script: {instanceID: 0}
-    - Class: 82
-      Script: {instanceID: 0}
-    - Class: 83
-      Script: {instanceID: 0}
-    - Class: 90
-      Script: {instanceID: 0}
-    - Class: 91
-      Script: {instanceID: 0}
-    - Class: 95
-      Script: {instanceID: 0}
-    - Class: 96
-      Script: {instanceID: 0}
-    - Class: 104
-      Script: {instanceID: 0}
-    - Class: 108
-      Script: {instanceID: 0}
-    - Class: 114
-      Script: {instanceID: 9746}
-    - Class: 114
-      Script: {instanceID: 9882}
-    - Class: 114
-      Script: {instanceID: 9898}
-    - Class: 114
-      Script: {instanceID: 9902}
-    - Class: 114
-      Script: {instanceID: 9924}
-    - Class: 114
-      Script: {instanceID: 9968}
-    - Class: 114
-      Script: {instanceID: 10238}
-    - Class: 114
-      Script: {instanceID: 10292}
-    - Class: 114
-      Script: {instanceID: 10378}
-    - Class: 114
-      Script: {instanceID: 10592}
-    - Class: 114
-      Script: {instanceID: 10740}
-    - Class: 114
-      Script: {instanceID: 10746}
-    - Class: 114
-      Script: {instanceID: 10794}
-    - Class: 114
-      Script: {instanceID: 10892}
-    - Class: 114
-      Script: {instanceID: 10910}
-    - Class: 114
-      Script: {instanceID: 11220}
-    - Class: 114
-      Script: {instanceID: 11226}
-    - Class: 114
-      Script: {instanceID: 11294}
-    - Class: 114
-      Script: {instanceID: 11358}
-    - Class: 114
-      Script: {instanceID: 11362}
-    - Class: 114
-      Script: {instanceID: 11402}
-    - Class: 114
-      Script: {instanceID: 11762}
-    - Class: 115
-      Script: {instanceID: 0}
-    - Class: 137
-      Script: {instanceID: 0}
-    - Class: 143
-      Script: {instanceID: 0}
-    - Class: 146
-      Script: {instanceID: 0}
-    - Class: 154
-      Script: {instanceID: 0}
-    - Class: 156
-      Script: {instanceID: 0}
-    - Class: 157
-      Script: {instanceID: 0}
-    - Class: 195
-      Script: {instanceID: 0}
-    - Class: 198
-      Script: {instanceID: 0}
-    - Class: 199
-      Script: {instanceID: 0}
-    - Class: 213
-      Script: {instanceID: 0}
-    - Class: 218
-      Script: {instanceID: 0}
-    - Class: 221
-      Script: {instanceID: 0}
-    - Class: 222
-      Script: {instanceID: 0}
-    - Class: 223
-      Script: {instanceID: 0}
-    - Class: 224
-      Script: {instanceID: 0}
-    - Class: 1953259897
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -249,6 +110,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SelectionCaret
+  - hash:
+      serializedVersion: 2
+      Hash: 841858e80b5de2986ee08ed492de977a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerPosition
   - hash:
       serializedVersion: 2
       Hash: 3748fbad2d474a315bda516b8363a0c5
@@ -279,6 +146,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: UnityStandardAssets.Characters.ThirdPerson
     className: AICharacterControl
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CheckPointInitializer
   - hash:
       serializedVersion: 2
       Hash: be8b29ecd05b56bbfb5cc0e39b16c11b
@@ -323,7 +196,7 @@ ScriptsOnlyBuild:
     className: ActivationTrack
   - hash:
       serializedVersion: 2
-      Hash: 6fb1a6887361e77074b10dc0b10c42f6
+      Hash: 0fdde28216189606ad6e47a57c102ffd
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: KartItem
@@ -417,6 +290,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: GridLayoutGroup
+  - hash:
+      serializedVersion: 2
+      Hash: ae1c930296bc1afd0d2edad6e47c4518
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LapHandle
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -519,6 +398,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: UnityStandardAssets.Vehicles.Car
     className: CarUserControl
+  - hash:
+      serializedVersion: 2
+      Hash: 215c229c634e8a283d8b5b8a91608e0c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AIPathFinding
   - hash:
       serializedVersion: 2
       Hash: caa533b001ae39b864ba8425019e2268
@@ -671,10 +556,22 @@ ScriptsOnlyBuild:
     className: LookatTarget
   - hash:
       serializedVersion: 2
+      Hash: 30f3213a6e218a461fa00e428f22d3eb
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LevelChanger
+  - hash:
+      serializedVersion: 2
       Hash: d4020bafcd3ccbb5601a6e6c8ac78be0
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: ScrollRect
+  - hash:
+      serializedVersion: 2
+      Hash: 15d9ec0f274d3bd28f1645bd606a9cea
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: KartLap
   - hash:
       serializedVersion: 2
       Hash: 861bf632a1a7c35dc32c4211227a61c6
@@ -815,7 +712,7 @@ ScriptsOnlyBuild:
     className: CarAIControl
   - hash:
       serializedVersion: 2
-      Hash: da4a039727efb82252c5e95fd08ff274
+      Hash: a95e376153c05e06243e37d516d6796d
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerFire
@@ -881,6 +778,12 @@ ScriptsOnlyBuild:
     className: FreeLookCam
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlaceTracking
+  - hash:
+      serializedVersion: 2
       Hash: 0d5cc9a4f0f2f06fdf3e42c1652779e3
     assemblyName: Assembly-CSharp.dll
     namespaceName: PolyPerfect
@@ -915,12 +818,6 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: PolyPerfect
     className: AnimationControl
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: TestAAAAAAAA
   - hash:
       serializedVersion: 2
       Hash: 97a580c59cad3623a01bbf5fb2d7fa93
@@ -1115,7 +1012,7 @@ ScriptsOnlyBuild:
     className: TMP_TextSelector_B
   - hash:
       serializedVersion: 2
-      Hash: c85394f816aed1bcb3c634cca6547690
+      Hash: a329ef517a61366b87f91050057ebe3c
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: FinderTest
@@ -1137,6 +1034,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: UnityStandardAssets.Vehicles.Car
     className: CarAudio
+  - hash:
+      serializedVersion: 2
+      Hash: 35207c60c26b4b473982e22735c204a0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: NextCheckpoint
   - hash:
       serializedVersion: 2
       Hash: 27e5341178f188b89bdc6495710b590c
@@ -1251,6 +1154,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
     className: VertexColorCycler
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: FixNormalCart
   - hash:
       serializedVersion: 2
       Hash: e63944317d2f5958e31963668bb29158
@@ -1397,6 +1306,12 @@ ScriptsOnlyBuild:
     className: StandaloneInputModule
   - hash:
       serializedVersion: 2
+      Hash: 15785af4b94fdc5486f569bfa32ec48c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CheckpointHandler
+  - hash:
+      serializedVersion: 2
       Hash: aa88ae22474df55295327e4ee99e5a24
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -1413,6 +1328,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Slider
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Settingo
+    className: GameSetting
   - hash:
       serializedVersion: 2
       Hash: 0fd6822f6177297bd0eb4d83cc7a9030
@@ -1434,5 +1355,4 @@ ScriptsOnlyBuild:
   platform: 5
   scenePathNames:
   - Assets/Scenes/MainMenu.unity
-  - Assets/Scenes/OvalTrackLevel.unity
-  playerPath: C:/Users/jrbel/Desktop/GroceryRunShoppingKarts.exe
+  playerPath: C:/Users/Matt/GroceryRun/GroceryRunShoppingKarts/Builsd/GroceryRunShoppingKarts.exe
