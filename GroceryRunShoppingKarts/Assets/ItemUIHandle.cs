@@ -40,7 +40,7 @@ public class ItemUIHandle : MonoBehaviour
         }
         else
         {
-            //Img.sprite = Kart.ItmUse.Visual;
+            Img.sprite = AllItemGraphics[Kart.HeldItem];
         }
     }
 
