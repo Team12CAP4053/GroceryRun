@@ -12,6 +12,8 @@ public class PlayerFire : MonoBehaviour
     public SphereCollider sphereBulletCollider;
     public BoxCollider boxBulletCollider;
 
+    public GameObject playerObject;
+
 
     // Change to actual member of karitem later
     public int itemVal;
@@ -20,11 +22,14 @@ public class PlayerFire : MonoBehaviour
     void Start()
     {
         itemVal = 0;
+        playerObject = GameObject.Find("Player Car");
     }
 
     // Update is called once per frame
     void Update()
     {
+        //Debug.Log(itemVal);m
+
         if (Input.GetButtonDown("Fire1") || Input.GetKeyDown("f"))
         {
             // Apple
@@ -44,7 +49,7 @@ public class PlayerFire : MonoBehaviour
                 sphereBulletCollider.radius = 0.07f;
                 sphereBulletCollider.center = new Vector3(0.0f, 0.05f, 0.0f);
 
-                itemVal = -1;
+                itemVal = 0;
             }
             // Chicken
             else if (itemVal == 1)
@@ -101,5 +106,6 @@ public class PlayerFire : MonoBehaviour
                 Debug.Log("Donezo");
             }
         }
+        itemVal = (int)playerObject.GetComponent<KartItem>().HeldItem;
     }
 }
