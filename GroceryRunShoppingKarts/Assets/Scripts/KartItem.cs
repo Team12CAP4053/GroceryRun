@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityStandardAssets.Vehicles.Car;
 
 public class KartItem : MonoBehaviour
 {
@@ -21,13 +22,15 @@ public class KartItem : MonoBehaviour
 
     public Item ItmUse;
 
+    private bool UseItem2;
+
 
     // Start is called before the first frame update
     void Start()
     {
         coins = 0;
         currentCost = 0;
-        
+
         Handle = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameItemsHandle>();
 
         ResetItem();
@@ -41,15 +44,29 @@ public class KartItem : MonoBehaviour
         coinsText.text = "Coins: " + coins.ToString();
 
         // Update item sprite
-        if (HeldItem != -1) 
+        if (HeldItem != -1)
         {
             ItmUse = Handle.AllItems[HeldItem];
         }
 
-        UseItem = Input.GetButtonDown("Item");
-        if (UseItem && HeldItem != -1)
+        UseItem = Input.GetButtonDown("Fire1");
+        UseItem2 = Input.GetKeyDown("f");
+        if ((UseItem || UseItem2) && HeldItem != -1)
         {
             ActivateItem();
+        }
+
+        if (coins == currentCost)
+        {
+            coins = 0;
+            GameObject.FindWithTag("Player").GetComponent<CarController>().TopSpeedReset(currentCost * 5);
+            currentCost = 0;
+        }
+        else if (coins > currentCost)
+        {
+            coins = coins - currentCost;
+            currentCost = 0;
+
         }
     }
 
@@ -105,16 +122,16 @@ public class KartItem : MonoBehaviour
 
     public IEnumerator CollectCoin(Collider collider)
     {
-            // Remove coin
-            collider.gameObject.SetActive(false);
+        // Remove coin
+        collider.gameObject.SetActive(false);
 
-            // Increment coins
-            this.coins++;
+        // Increment coins
+        this.coins++;
 
-            // Wait and respawn box
-            yield return new WaitForSeconds(5);
-            collider.gameObject.SetActive(true);
-        
+        // Wait and respawn box
+        yield return new WaitForSeconds(5);
+        collider.gameObject.SetActive(true);
+
     }
 
     void OnTriggerEnter(Collider collider)
@@ -137,7 +154,7 @@ public class KartItem : MonoBehaviour
         }
     }
 
-    
+
 
 
     public void ResetItem()
