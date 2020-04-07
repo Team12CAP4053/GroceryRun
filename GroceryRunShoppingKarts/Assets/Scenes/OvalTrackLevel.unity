@@ -1575,7 +1575,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DelayBeforeItemPickup: 1
   HeldItem: 0
+  coins: 0
+  currentCost: 0
   CanPickup: 0
+  currentCostText: {fileID: 0}
+  coinsText: {fileID: 0}
   ItmUse: {fileID: 0}
 --- !u!1001 &524574790
 PrefabInstance:

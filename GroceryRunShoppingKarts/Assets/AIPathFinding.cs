@@ -7,11 +7,11 @@ public class AIPathFinding : MonoBehaviour
 {
     // Start is called before the first frame update
     public NextCheckpoint checkpoint;
-    GameObject Leonardo;
+
     void Start()
     {
-        Leonardo = GameObject.FindWithTag("Leonardo");
-        Leonardo.GetComponent<CarAIControl>().SetTarget(checkpoint.GetComponent<Transform>());
+        this.GetComponent<CarAIControl>().SetTarget(checkpoint.GetComponent<Transform>());
+
     }
 
     // Update is called once per frame
@@ -26,7 +26,7 @@ public class AIPathFinding : MonoBehaviour
         {
             checkpoint = collider.gameObject.GetComponent<NextCheckpoint>().next;
             Debug.Log(checkpoint.name);
-            Leonardo.GetComponent<CarAIControl>().SetTarget(checkpoint.GetComponent<Transform>());
+            this.GetComponent<CarAIControl>().SetTarget(checkpoint.GetComponent<Transform>());
         }
     }
 }

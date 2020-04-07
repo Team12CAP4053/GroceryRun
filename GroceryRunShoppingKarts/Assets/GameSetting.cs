@@ -15,7 +15,7 @@ namespace Settingo
             setting = JsonUtility.FromJson<Setting>(jsonfile);
 
             GameObject.FindWithTag("Player").GetComponent<CarController>().setTopSpeed(setting.getSpeedDifficulty());
-            GameObject.FindWithTag("Leonardo").GetComponent<FinderTest>().setTopSpeed(setting.getSpeedDifficulty());
+            GameObject.FindWithTag("Leonardo").GetComponent<CarController>().setTopSpeed(setting.getSpeedDifficulty());
         }
     }
     [System.Serializable]
