@@ -35,12 +35,17 @@ public class KartLap : MonoBehaviour
                 lapText.text = "Lap: " + (lapIndex + 1) + "/" + lapHandle.GetMaxLap();
                 if (lapHandle.GetMaxLap() == lapIndex)
                 {
-                //Debug.Log("Donezasdasdo");
+                continueText.gameObject.SetActive(true);
+                finishText.gameObject.SetActive(true);
                     if (Input.anyKeyDown)
                     {
                         level.FadeToNextLevel();
                     }
-                }
+            }
+            else {
+                continueText.gameObject.SetActive(false);
+                finishText.gameObject.SetActive(false);
+            }
             
             
         }
