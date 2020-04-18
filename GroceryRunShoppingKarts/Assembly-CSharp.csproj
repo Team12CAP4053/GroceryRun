@@ -65,7 +65,6 @@
   <ItemGroup>
     <Compile Include="Assets\AIPathFinding.cs" />
     <Compile Include="Assets\FixNormalCart.cs" />
-    <Compile Include="Assets\GameSetting.cs" />
     <Compile Include="Assets\Inside Store\Scripts\RotateMoveCamera.cs" />
     <Compile Include="Assets\ItemUIHandle.cs" />
     <Compile Include="Assets\Low Poly Animated People\- Scripts\AIScripts\AIState.cs" />
@@ -94,6 +93,7 @@
     <Compile Include="Assets\Scripts\FinderTest.cs" />
     <Compile Include="Assets\Scripts\FoodBullet.cs" />
     <Compile Include="Assets\Scripts\GameItemsHandle.cs" />
+    <Compile Include="Assets\Scripts\GameSetting.cs" />
     <Compile Include="Assets\Scripts\Item.cs" />
     <Compile Include="Assets\Scripts\ItemBlock.cs" />
     <Compile Include="Assets\Scripts\KartItem.cs" />
@@ -105,6 +105,7 @@
     <Compile Include="Assets\Scripts\PlaceTracking.cs" />
     <Compile Include="Assets\Scripts\PlayerFire.cs" />
     <Compile Include="Assets\Scripts\PlayerPosition.cs" />
+    <Compile Include="Assets\Scripts\SelectDifficulty.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />

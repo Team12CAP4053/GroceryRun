@@ -13,9 +13,6 @@ namespace Settingo
         {
             string jsonfile = File.ReadAllText(Application.dataPath + "/config/settings.json");
             setting = JsonUtility.FromJson<Setting>(jsonfile);
-
-            GameObject.FindWithTag("Player").GetComponent<CarController>().setTopSpeed(setting.getSpeedDifficulty());
-            GameObject.FindWithTag("Leonardo").GetComponent<CarController>().setTopSpeed(setting.getSpeedDifficulty());
         }
     }
     [System.Serializable]
@@ -35,6 +32,19 @@ namespace Settingo
         public float getLevelDifficulty()
         {
             return getAILevel(this.difficulty);
+        }
+        public void SetDifficulty(string diff)
+        {
+            if(diff.ToLower() == "easy")
+            {
+                difficulty = Difficulty.EASY;
+            }else if (diff.ToLower() == "normal")
+            {
+                difficulty = Difficulty.NORMAL;
+            }else if (diff.ToLower() == "hard")
+            {
+                difficulty = Difficulty.HARD;
+            }
         }
         public float getSpeed(Difficulty diff)
         {
