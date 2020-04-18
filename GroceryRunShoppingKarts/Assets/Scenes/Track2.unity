@@ -63631,7 +63631,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DelayBeforeItemPickup: 1
-  HeldItem: 0
+  HeldItem: -1
   coins: 0
   currentCost: 0
   CanPickup: 1
@@ -64651,12 +64651,6 @@ PrefabInstance:
         type: 3}
     - target: {fileID: 3640253743701332382, guid: 8886d6d97281925489fe4d2192d77025,
         type: 3}
-      propertyPath: EmptyItem
-      value: 
-      objectReference: {fileID: 21300000, guid: c49f486c95c050a4aa8950eb3587f719,
-        type: 3}
-    - target: {fileID: 3640253743701332382, guid: 8886d6d97281925489fe4d2192d77025,
-        type: 3}
       propertyPath: AllItemGraphics.Array.data[1]
       value: 
       objectReference: {fileID: 21300000, guid: 4a1d681eaa722d84ab099083007f3f11,
@@ -64787,6 +64781,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3640253744945591849, guid: 8886d6d97281925489fe4d2192d77025,
+        type: 3}
+      propertyPath: m_Text
+      value: 'Money: 0'
       objectReference: {fileID: 0}
     - target: {fileID: 4875516725953730380, guid: 8886d6d97281925489fe4d2192d77025,
         type: 3}

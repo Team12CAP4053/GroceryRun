@@ -41,7 +41,7 @@ public class KartItem : MonoBehaviour
     {
         // update counter text
         currentCostText.text = "Current Cost: " + currentCost.ToString();
-        coinsText.text = "Coins: " + coins.ToString();
+        coinsText.text = "Money: " + coins.ToString();
 
         // Update item sprite
         if (HeldItem != -1)

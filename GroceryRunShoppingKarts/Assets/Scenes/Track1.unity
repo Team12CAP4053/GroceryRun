@@ -46705,7 +46705,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 4a1d681eaa722d84ab099083007f3f11, type: 3}
   - {fileID: 21300000, guid: 7dfd5b8102d2f934fb5d948d8fccc595, type: 3}
   - {fileID: 21300000, guid: e5e5343b92a05d44e8462a8841b8db27, type: 3}
-  EmptyItem: {fileID: 21300000, guid: c49f486c95c050a4aa8950eb3587f719, type: 3}
+  EmptyItem: {fileID: 0}
   Img: {fileID: 7617261530299131325}
   Kart: {fileID: 5120741012436522725}
 --- !u!222 &7617261528751328543
@@ -46832,7 +46832,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Coins: 0'
+  m_Text: 'Money: 0'
 --- !u!224 &7617261529651882666
 RectTransform:
   m_ObjectHideFlags: 0
