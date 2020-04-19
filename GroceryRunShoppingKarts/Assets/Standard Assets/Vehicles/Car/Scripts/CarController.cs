@@ -23,6 +23,7 @@ namespace UnityStandardAssets.Vehicles.Car
     {
         public Text speedText;
         public float saveTopSpeed;
+        public int maxSpeedPercent;
 
         [SerializeField] private CarDriveType m_CarDriveType = CarDriveType.FourWheelDrive;
         [SerializeField] private WheelCollider[] m_WheelColliders = new WheelCollider[4];
@@ -67,7 +68,8 @@ namespace UnityStandardAssets.Vehicles.Car
 
         public void Update()
         {
-            speedText.text = "Speed\n" + ((int)CurrentSpeed).ToString() + " MPH";
+            speedText.text = "Speed\n" + ((int)CurrentSpeed).ToString() + " MPH\n" + 
+                             "Max Speed\n" + maxSpeedPercent.ToString() + "%";
         }
 
         public void slowDownTopSpeed(float speed)

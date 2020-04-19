@@ -44,6 +44,9 @@ public class KartItem : MonoBehaviour
         currentCostText.text = "Current Cost: " + currentCost.ToString();
         coinsText.text = "Money: " + coins.ToString();
 
+        // Update speed penalty
+        GameObject.FindWithTag("Player").GetComponent<CarController>().maxSpeedPercent = 100 - (currentCost * 5);
+
         // Update item sprite
         if (HeldItem != -1)
         {
