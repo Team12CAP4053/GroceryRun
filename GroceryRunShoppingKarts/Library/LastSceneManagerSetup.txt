@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/DifficultyMenu.unity
+- path: Assets/Scenes/Track3.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
