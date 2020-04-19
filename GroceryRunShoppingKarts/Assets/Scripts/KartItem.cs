@@ -19,6 +19,7 @@ public class KartItem : MonoBehaviour
 
     public Text currentCostText;
     public Text coinsText;
+    public Text checkoutText;
 
     public Item ItmUse;
 
@@ -56,17 +57,18 @@ public class KartItem : MonoBehaviour
             ActivateItem();
         }
 
-        if (coins == currentCost)
+        if (coins == currentCost && currentCost != 0)
         {
             coins = 0;
             GameObject.FindWithTag("Player").GetComponent<CarController>().TopSpeedReset(currentCost * 5);
             currentCost = 0;
+            StartCoroutine(checkout());
         }
-        else if (coins > currentCost)
+        else if (coins > currentCost && currentCost != 0)
         {
             coins = coins - currentCost;
             currentCost = 0;
-
+            StartCoroutine(checkout());
         }
     }
 
@@ -80,18 +82,11 @@ public class KartItem : MonoBehaviour
 
     public IEnumerator checkout()
     {
-        if (coins >= currentCost)
-        {
-            coins -= currentCost;
-            currentCost = 0;
-        }
-        else
-        {
-            currentCost -= coins;
-            coins = 0;
-        }
+        checkoutText.text = "Items bought & cart unloaded!\nBack to normal speed!";
 
-        yield return new WaitForSeconds(0);
+        yield return new WaitForSeconds(4);
+
+        checkoutText.text = "";
     }
 
 
@@ -146,11 +141,6 @@ public class KartItem : MonoBehaviour
             // Limit coins to 10
             if (coins < 10)
                 StartCoroutine(CollectCoin(collider));
-        }
-
-        if (collider.gameObject.tag == "checkout")
-        {
-            StartCoroutine(checkout());
         }
     }
 

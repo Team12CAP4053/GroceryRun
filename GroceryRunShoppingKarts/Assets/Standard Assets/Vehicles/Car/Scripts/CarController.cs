@@ -1,8 +1,11 @@
 using System;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace UnityStandardAssets.Vehicles.Car
 {
+    
+
     internal enum CarDriveType
     {
         FrontWheelDrive,
@@ -18,6 +21,9 @@ namespace UnityStandardAssets.Vehicles.Car
 
     public class CarController : MonoBehaviour
     {
+        public Text speedText;
+        public float saveTopSpeed;
+
         [SerializeField] private CarDriveType m_CarDriveType = CarDriveType.FourWheelDrive;
         [SerializeField] private WheelCollider[] m_WheelColliders = new WheelCollider[4];
         [SerializeField] private GameObject[] m_WheelMeshes = new GameObject[4];
@@ -59,6 +65,11 @@ namespace UnityStandardAssets.Vehicles.Car
             m_Topspeed = speed;
         }
 
+        public void Update()
+        {
+            speedText.text = "Speed\n" + ((int)CurrentSpeed).ToString() + " MPH";
+        }
+
         public void slowDownTopSpeed(float speed)
         {
             m_Topspeed -= speed;
@@ -72,6 +83,8 @@ namespace UnityStandardAssets.Vehicles.Car
         // Use this for initialization
         private void Start()
         {
+            
+
             m_WheelMeshLocalRotations = new Quaternion[4];
             for (int i = 0; i < 4; i++)
             {
@@ -83,7 +96,13 @@ namespace UnityStandardAssets.Vehicles.Car
 
             m_Rigidbody = GetComponent<Rigidbody>();
             m_CurrentTorque = m_FullTorqueOverAllWheels - (m_TractionControl * m_FullTorqueOverAllWheels);
+
+            new WaitForSeconds(1);
+            // Save top speed
+            saveTopSpeed = MaxSpeed;
         }
+
+       
 
 
         private void GearChanging()
