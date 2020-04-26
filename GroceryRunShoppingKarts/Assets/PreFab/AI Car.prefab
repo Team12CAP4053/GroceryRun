@@ -671,6 +671,7 @@ GameObject:
   - component: {fileID: 2787187463105640175}
   - component: {fileID: 2787187463100107165}
   - component: {fileID: 2787187463099948831}
+  - component: {fileID: 4759548234259051257}
   - component: {fileID: 2817116688756883604}
   - component: {fileID: 536356204512403069}
   m_Layer: 0
@@ -729,6 +730,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ea65b38d485c374caa584a03f1de571, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speedText: {fileID: 0}
+  saveTopSpeed: 0
+  maxSpeedPercent: 0
   m_CarDriveType: 2
   m_WheelColliders:
   - {fileID: 2787187463092546331}
@@ -758,6 +762,27 @@ MonoBehaviour:
   m_RevRangeBoundary: 1
   m_SlipLimit: 0.3
   m_BrakeTorque: 20000
+--- !u!114 &4759548234259051257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2787187463105473175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc6ac28190cbd9e4a9dbc0ecc0a84659, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DelayBeforeItemPickup: 1
+  HeldItem: 0
+  coins: 0
+  currentCost: 0
+  CanPickup: 1
+  currentCostText: {fileID: 0}
+  coinsText: {fileID: 0}
+  checkoutText: {fileID: 0}
+  ItmUse: {fileID: 0}
 --- !u!114 &2817116688756883604
 MonoBehaviour:
   m_ObjectHideFlags: 0

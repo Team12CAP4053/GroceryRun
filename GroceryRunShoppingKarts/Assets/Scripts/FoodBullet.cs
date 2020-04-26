@@ -33,7 +33,7 @@ public class FoodBullet : MonoBehaviour
         GameObject otherObj = collision.gameObject;
         Debug.Log("Collided with: " + otherObj);
 
-        if (otherObj.tag == "Player")
+        if (otherObj.GetComponent<CarController>())
         {
             Debug.Log(this.name);
             if (this.name == "FMGP_PRE_Apple_256(Clone)")

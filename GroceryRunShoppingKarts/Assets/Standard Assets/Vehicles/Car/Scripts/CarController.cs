@@ -68,8 +68,11 @@ namespace UnityStandardAssets.Vehicles.Car
 
         public void Update()
         {
-            speedText.text = "Speed\n" + ((int)CurrentSpeed).ToString() + " MPH\n" + 
+            if(gameObject.tag == "Player")
+            {
+                speedText.text = "Speed\n" + ((int)CurrentSpeed).ToString() + " MPH\n" +
                              "Max Speed\n" + maxSpeedPercent.ToString() + "%";
+            }
         }
 
         public void slowDownTopSpeed(float speed)

@@ -41,11 +41,14 @@ public class KartItem : MonoBehaviour
     void Update()
     {
         // update counter text
-        currentCostText.text = "Current Cost: " + currentCost.ToString();
-        coinsText.text = "Money: " + coins.ToString();
+        if(gameObject.tag == "Player")
+        {
+            currentCostText.text = "Current Cost: " + currentCost.ToString();
+            coinsText.text = "Money: " + coins.ToString();
+        }
 
         // Update speed penalty
-        GameObject.FindWithTag("Player").GetComponent<CarController>().maxSpeedPercent = 100 - (currentCost * 5);
+        gameObject.GetComponent<CarController>().maxSpeedPercent = 100 - (currentCost * 5);
 
         // Update item sprite
         if (HeldItem != -1)
@@ -63,7 +66,7 @@ public class KartItem : MonoBehaviour
         if (coins == currentCost && currentCost != 0)
         {
             coins = 0;
-            GameObject.FindWithTag("Player").GetComponent<CarController>().TopSpeedReset(currentCost * 5);
+            gameObject.GetComponent<CarController>().TopSpeedReset(currentCost * 5);
             currentCost = 0;
             StartCoroutine(checkout());
         }
