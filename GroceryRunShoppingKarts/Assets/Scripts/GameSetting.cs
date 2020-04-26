@@ -3,16 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
 using UnityStandardAssets.Vehicles.Car;
+using UnityEngine.SceneManagement;
+
 namespace Settingo
 {
 
     public class GameSetting : MonoBehaviour
     {
         public static Setting setting;
+        public static string trackname;
         void Awake()
         {
             string jsonfile = File.ReadAllText(Application.dataPath + "/config/settings.json");
             setting = JsonUtility.FromJson<Setting>(jsonfile);
+            trackname = SceneManager.GetActiveScene().name;
         }
     }
     [System.Serializable]
@@ -25,6 +29,30 @@ namespace Settingo
         public int normal_level;
         public int hard_level;
         public Difficulty difficulty = Difficulty.EASY;
+        public int track1_scaling;
+        public int track2_scaling;
+        public int track3_scaling;
+        public int track4_scaling;
+        public int GetScaling()
+        {
+            if(GameSetting.trackname == "Track1")
+            {
+                return track1_scaling;
+            }else if(GameSetting.trackname == "Track2")
+            {
+                return track2_scaling;
+            }else if(GameSetting.trackname == "Track3")
+            {
+                return track3_scaling;
+            }else if(GameSetting.trackname == "Track4")
+            {
+                return track4_scaling;
+            }
+            else
+            {
+                return 100;
+            }
+        }
         public float getSpeedDifficulty()
         {
             return getSpeed(this.difficulty);
