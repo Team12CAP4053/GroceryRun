@@ -33,6 +33,11 @@ public class LapHandle : MonoBehaviour
             {
                 kart.incrementLap();
                 kart.checkpointIndex = 1;
+                if(kart.gameObject.tag == "Leonardo")
+                {
+                    kart.gameObject.GetComponent<AIPathFinding>().ReAssignPath();
+                    Debug.Log("Changed Path");
+                }
             }
         }
     }

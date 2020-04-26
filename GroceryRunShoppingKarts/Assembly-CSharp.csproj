@@ -88,6 +88,7 @@
     <Compile Include="Assets\PathCreator\Examples\Scripts\PathSceneTool.cs" />
     <Compile Include="Assets\PathCreator\Examples\Scripts\PathSpawner.cs" />
     <Compile Include="Assets\PathCreator\Examples\Scripts\RoadMeshCreator.cs" />
+    <Compile Include="Assets\PathList.cs" />
     <Compile Include="Assets\Scripts\CheckpointHandler.cs" />
     <Compile Include="Assets\Scripts\CheckPointInitializer.cs" />
     <Compile Include="Assets\Scripts\FinderTest.cs" />
