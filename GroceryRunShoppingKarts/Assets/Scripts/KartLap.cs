@@ -12,6 +12,7 @@ public class KartLap : MonoBehaviour
     public LevelChanger level;
     public Text continueText;
     public Text finishText;
+    public Text placementText;
     // Start is called before the first frame update
     void Start()
     {
@@ -37,15 +38,21 @@ public class KartLap : MonoBehaviour
                 {
                 continueText.gameObject.SetActive(true);
                 finishText.gameObject.SetActive(true);
-                    if (Input.anyKeyDown)
-                    {
-                        level.FadeToNextLevel();
-                    }
-            }
-            else {
-                continueText.gameObject.SetActive(false);
-                finishText.gameObject.SetActive(false);
-            }
+                // Set placemennt text
+                placementText.text = gameObject.GetComponent<PlayerPosition>().place.text;
+
+                placementText.gameObject.SetActive(true);
+                if (Input.anyKeyDown)
+                {
+                    level.FadeToNextLevel();
+                }
+        }
+        else 
+        {
+            continueText.gameObject.SetActive(false);
+            finishText.gameObject.SetActive(false);
+            placementText.gameObject.SetActive(false);
+        }
             
             
         }
