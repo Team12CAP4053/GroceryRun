@@ -276,6 +276,7 @@ namespace PathCreation {
             // Continues dividing in half until closest surrounding vertices have been found.
             while (true) {
                 // t lies to left
+
                 if (t <= times[i]) {
                     nextIndex = i;
                 }

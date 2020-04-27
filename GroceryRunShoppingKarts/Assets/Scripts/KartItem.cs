@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -109,7 +110,7 @@ public class KartItem : MonoBehaviour
             yield return new WaitForSeconds(DelayBeforeItemPickup);
 
             // Get random item
-            int ItemRand = Random.Range(0, Handle.AllItems.Length);
+            int ItemRand = UnityEngine.Random.Range(0, Handle.AllItems.Length);
 
             // Set item
             ItmUse = Handle.AllItems[ItemRand];
@@ -120,7 +121,10 @@ public class KartItem : MonoBehaviour
             collider.gameObject.SetActive(true);
         }
     }
-
+    public Boolean HoldingItem()
+    {
+        return HeldItem != -1;
+    }
     public IEnumerator CollectCoin(Collider collider)
     {
         // Remove coin

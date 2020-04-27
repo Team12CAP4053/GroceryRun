@@ -37,7 +37,6 @@ public class AIPathFinding : MonoBehaviour
         }
         else if(currentSpeed < topSpeed * 0.6 && currentSpeed > 30)
         {
-            Debug.Log(positionTime + (0.5/mapScaling) + " reee");
             waypoint.transform.position = path.path.GetPointAtTime(positionTime + (0.4f / mapScaling));
         }
         else

@@ -35,7 +35,7 @@ public class FoodBullet : MonoBehaviour
 
         if (otherObj.GetComponent<CarController>())
         {
-            Debug.Log(this.name);
+           
             if (this.name == "FMGP_PRE_Apple_256(Clone)")
             {
                 if (otherObj.GetComponent<KartItem>().currentCost <= 10 && (otherObj.GetComponent<KartItem>().currentCost + 2) < 10)
