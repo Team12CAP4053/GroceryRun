@@ -31,16 +31,18 @@ public class PlaceTracking : MonoBehaviour
             }
             else
             {
-                
+               
                 for (int g = pos.Count - 1; g > 0; g--)
                 {
                     
-                    if (pos[g - 1].GetComponent<KartLap>().positionScore() < pos[g].GetComponent<KartLap>().positionScore())
+                    if (pos[g - 1].GetComponent<KartLap>().positionScore() < pos[g].GetComponent<KartLap>().positionScore() && pos[g].GetComponent<KartLap>().lapIndex <= 2 && pos[g-1].GetComponent<KartLap>().lapIndex <= 2)
                     {
-                        
-                        PlayerPosition temp = pos[g - 1];
-                        pos[g - 1] = pos[g];
-                        pos[g] = temp;
+                        if (pos[g].GetComponent<KartLap>().lapIndex == pos[g - 1].GetComponent<KartLap>().lapIndex)
+                        {
+                            PlayerPosition temp = pos[g - 1];
+                            pos[g - 1] = pos[g];
+                            pos[g] = temp;
+                        }
                     }
                     
                 }

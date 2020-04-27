@@ -22412,7 +22412,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -48888,7 +48888,7 @@ MonoBehaviour:
   speedText: {fileID: 1997851608}
   saveTopSpeed: 0
   maxSpeedPercent: 0
-  m_CarDriveType: 2
+  m_CarDriveType: 0
   m_WheelColliders:
   - {fileID: 2131900697368549077}
   - {fileID: 2131900697368549075}
@@ -48906,7 +48906,7 @@ MonoBehaviour:
   - {fileID: 2131900697375695581}
   m_CentreOfMassOffset: {x: 0, y: 0, z: 0}
   m_MaximumSteerAngle: 25
-  m_SteerHelper: 0.644
+  m_SteerHelper: 1
   m_TractionControl: 1
   m_FullTorqueOverAllWheels: 2500
   m_ReverseTorque: 500
@@ -54614,6 +54614,25 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RootOrder
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2818689053907815408, guid: f84c39773c61a5449ad5885e0179ad98,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -11
+      objectReference: {fileID: 0}
+    - target: {fileID: 2818689053907815411, guid: f84c39773c61a5449ad5885e0179ad98,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 2818689053907815411, guid: f84c39773c61a5449ad5885e0179ad98,
+        type: 3}
+      propertyPath: m_Text
+      value: '
+
+
+
+        Track Complete'
       objectReference: {fileID: 0}
     - target: {fileID: 4570540186250738450, guid: f84c39773c61a5449ad5885e0179ad98,
         type: 3}

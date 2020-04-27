@@ -11,20 +11,27 @@ public class PlayerPosition : MonoBehaviour
     {
         if(place != null)
         {
-            switch (position)
+            if (place.text != null && this.GetComponent<KartLap>().lapIndex > 2)
             {
-                case 1:
-                    place.text = position + "st Place";
-                    break;
-                case 2:
-                    place.text = position + "nd Place";
-                    break;
-                case 3:
-                    place.text = position + "rd Place";
-                    break;
-                case 4:
-                    place.text = position + "th Place";
-                    break;
+                place.text = place.text;
+            }
+            else
+            {
+                switch (position)
+                {
+                    case 1:
+                        place.text = position + "st Place";
+                        break;
+                    case 2:
+                        place.text = position + "nd Place";
+                        break;
+                    case 3:
+                        place.text = position + "rd Place";
+                        break;
+                    case 4:
+                        place.text = position + "th Place";
+                        break;
+                }
             }
         }   
     }
