@@ -32406,7 +32406,7 @@ MonoBehaviour:
       - 0
       globalNormalsAngle: 0
       flipNormals: 0
-    vertexPathUpToDate: 0
+    vertexPathUpToDate: 1
     vertexPathMaxAngleError: 0.3
     vertexPathMinVertexSpacing: 0.01
     showTransformTool: 1
@@ -51563,6 +51563,11 @@ PrefabInstance:
       propertyPath: m_MaximumSteerAngle
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 2787187463099948831, guid: 393a6e9dd9a6f054bae19c413fd93f41,
+        type: 3}
+      propertyPath: m_CarDriveType
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2787187463105473175, guid: 393a6e9dd9a6f054bae19c413fd93f41,
         type: 3}
       propertyPath: m_Name
@@ -51818,7 +51823,7 @@ PrefabInstance:
     - target: {fileID: 1227109058220861559, guid: 393a6e9dd9a6f054bae19c413fd93f41,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2787187463099948831, guid: 393a6e9dd9a6f054bae19c413fd93f41,
         type: 3}
@@ -51908,7 +51913,7 @@ PrefabInstance:
     - target: {fileID: 7695221778703074269, guid: 393a6e9dd9a6f054bae19c413fd93f41,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8484875109233806995, guid: 393a6e9dd9a6f054bae19c413fd93f41, type: 3}

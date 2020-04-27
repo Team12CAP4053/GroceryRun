@@ -55787,7 +55787,7 @@ MonoBehaviour:
   speedText: {fileID: 129576157}
   saveTopSpeed: 0
   maxSpeedPercent: 0
-  m_CarDriveType: 2
+  m_CarDriveType: 0
   m_WheelColliders:
   - {fileID: 2131900697996438914}
   - {fileID: 2131900697996438916}
@@ -55805,7 +55805,7 @@ MonoBehaviour:
   - {fileID: 2131900697989290378}
   m_CentreOfMassOffset: {x: 0, y: 0, z: 0}
   m_MaximumSteerAngle: 25
-  m_SteerHelper: 0.644
+  m_SteerHelper: 1
   m_TractionControl: 1
   m_FullTorqueOverAllWheels: 2500
   m_ReverseTorque: 500
