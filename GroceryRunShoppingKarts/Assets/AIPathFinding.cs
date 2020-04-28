@@ -20,17 +20,23 @@ public class AIPathFinding : MonoBehaviour
     {
         this.GetComponent<CarAIControl>().SetTarget(waypoint);
         carController = gameObject.GetComponent<CarController>();
+        
         path = pathList.RandomPath();
         mapScaling = GameSetting.setting.GetScaling();
+        topSpeed = carController.MaxSpeed;
+        carController.setTopSpeed(carController.MaxSpeed + 10);
     }
 
     // Update is called once per frame
     void Update()
     {
         currentSpeed = carController.CurrentSpeed;
-        position = gameObject.GetComponent<Transform>().position;
         topSpeed = carController.MaxSpeed;
+
+        position = gameObject.GetComponent<Transform>().position;
+        
         positionTime = path.path.GetClosestTimeOnPath(position);
+        
         if(currentSpeed < 20)
         {
             waypoint.transform.position = path.path.GetPointAtTime(positionTime + (0.2f / mapScaling));

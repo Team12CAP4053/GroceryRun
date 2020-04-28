@@ -30,6 +30,7 @@ public class PauseMenu : MonoBehaviour
                 settings.paused = true;
             }
         }
+        
         if (settings.paused)
         {
             Pause();
@@ -42,6 +43,7 @@ public class PauseMenu : MonoBehaviour
     public void Pause()
     {
         Time.timeScale = 0f;
+        AudioListener.pause = settings.paused;
         pauseScreen.SetActive(true);
         playScreen.SetActive(false);
     }
@@ -49,6 +51,7 @@ public class PauseMenu : MonoBehaviour
     {
         settings.paused = false;
         Time.timeScale = 1f;
+        AudioListener.pause = settings.paused;
         pauseScreen.SetActive(false);
         playScreen.SetActive(true);
     }
@@ -59,6 +62,7 @@ public class PauseMenu : MonoBehaviour
     public void MainMenu()
     {
         Resume();
+        AudioListener.pause = true;
         level.FadeToLevel(0);
     }
 }

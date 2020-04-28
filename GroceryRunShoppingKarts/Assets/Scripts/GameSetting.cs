@@ -28,8 +28,8 @@ namespace Settingo
         public int easy_level = 1;
         public int normal_level = 3;
         public int hard_level = 5;
-        public Difficulty difficulty = Difficulty.EASY;
-        public int track1_scaling = 10;
+        public Difficulty difficulty = Difficulty.HARD;
+        public int track1_scaling = 30;
         public int track2_scaling = 50;
         public int track3_scaling = 100;
         public int track4_scaling = 50;
@@ -50,7 +50,7 @@ namespace Settingo
             }
             else
             {
-                return 100;
+                return 10;
             }
         }
         public float getSpeedDifficulty()

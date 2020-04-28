@@ -4747,6 +4747,11 @@ PrefabInstance:
       propertyPath: m_textInfo.pageCount
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4930020118841020395, guid: d6e62f984b159b941b9fbc6bc45df0d9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6e62f984b159b941b9fbc6bc45df0d9, type: 3}
 --- !u!114 &248340702 stripped
@@ -29709,6 +29714,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 412297205f2cbca49aa165a161ece4b7, type: 3}
+--- !u!114 &1524757286 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 580306836691466429, guid: d6e62f984b159b941b9fbc6bc45df0d9,
+    type: 3}
+  m_PrefabInstance: {fileID: 248340701}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1526723765
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34410,6 +34427,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cpIndex: 0
   wrongwayText: {fileID: 0}
+--- !u!114 &1761076926 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4930020118662578498, guid: d6e62f984b159b941b9fbc6bc45df0d9,
+    type: 3}
+  m_PrefabInstance: {fileID: 248340701}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1764132546
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35890,7 +35919,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1832245331
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52727,7 +52756,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   position: 0
-  place: {fileID: 0}
+  place: {fileID: 1761076926}
 --- !u!114 &3170853857143236199
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52746,7 +52775,7 @@ MonoBehaviour:
   lapText: {fileID: 248340705}
   level: {fileID: 2073419775}
   continueText: {fileID: 248340707}
-  finishText: {fileID: 248340705}
+  finishText: {fileID: 1524757286}
   placementText: {fileID: 248340706}
 --- !u!4 &3413178030232033982
 Transform:

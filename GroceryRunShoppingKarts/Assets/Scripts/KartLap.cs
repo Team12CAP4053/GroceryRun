@@ -13,6 +13,7 @@ public class KartLap : MonoBehaviour
     public Text continueText;
     public Text finishText;
     public Text placementText;
+
     private bool finished;
     // Start is called before the first frame update
     void Start()
@@ -41,7 +42,12 @@ public class KartLap : MonoBehaviour
                 continueText.gameObject.SetActive(true);
                 finishText.gameObject.SetActive(true);
                 // Set placemennt text
-                placementText.text = gameObject.GetComponent<PlayerPosition>().place.text;
+                placementText.
+                    text = 
+                    gameObject.
+                    GetComponent<PlayerPosition>().
+                    place.
+                    text;
 
                 placementText.gameObject.SetActive(true);
                 if (!finished)
@@ -49,7 +55,7 @@ public class KartLap : MonoBehaviour
                     Time.timeScale = 0f;
                     finished = true;
                 }
-                else if (Input.anyKeyDown)
+                if (Input.anyKeyDown)
                 {
                     Time.timeScale = 1f;
                     level.FadeToNextLevel();

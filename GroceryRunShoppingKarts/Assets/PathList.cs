@@ -20,19 +20,7 @@ public class PathList : MonoBehaviour
     }
     public PathCreator RandomPath()
     {
-        while (true)
-        {
-            int num = rand.Next() % paths.Count;
-            if(availablePath.Count == 0)
-            {
-                ResetAvailablePaths();
-            }
-            if (availablePath.Contains(paths[num]))
-            {
-                availablePath.Remove(paths[num]);
-                return paths[num];
-            }
-        }
+        return paths[rand.Next() % paths.Count];
     }
     public void ResetAvailablePaths()
     {
