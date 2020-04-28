@@ -14,7 +14,6 @@ public class AIShootDetection : MonoBehaviour
         //Debug.Log(collider);
         if (collider.gameObject.GetComponent<CarController>())
         {
-            Debug.Log("YEET");
             if (inventory.HoldingItem())
             {
                 Debug.Log(inventory.HeldItem);

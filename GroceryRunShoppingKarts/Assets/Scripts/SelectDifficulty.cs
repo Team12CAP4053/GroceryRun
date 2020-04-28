@@ -12,6 +12,5 @@ public class SelectDifficulty : MonoBehaviour
     public void SetDifficulty(string diff)
     {
         GameSetting.setting.SetDifficulty(diff);
-        File.WriteAllText(Application.dataPath + "/config/settings.json", JsonUtility.ToJson(GameSetting.setting));
     }
 }

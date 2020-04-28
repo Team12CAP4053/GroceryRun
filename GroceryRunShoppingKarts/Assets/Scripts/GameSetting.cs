@@ -14,25 +14,25 @@ namespace Settingo
         public static string trackname;
         void Awake()
         {
-            string jsonfile = File.ReadAllText(Application.dataPath + "/config/settings.json");
-            setting = JsonUtility.FromJson<Setting>(jsonfile);
+            DontDestroyOnLoad(transform.gameObject);
+            setting = new Setting();
             trackname = SceneManager.GetActiveScene().name;
         }
     }
-    [System.Serializable]
     public class Setting
     {
-        public float easy_speed;
-        public float normal_speed;
-        public float hard_speed;
-        public int easy_level;
-        public int normal_level;
-        public int hard_level;
+        public bool paused = false;
+        public float easy_speed = 75;
+        public float normal_speed = 95;
+        public float hard_speed = 110;
+        public int easy_level = 1;
+        public int normal_level = 3;
+        public int hard_level = 5;
         public Difficulty difficulty = Difficulty.EASY;
-        public int track1_scaling;
-        public int track2_scaling;
-        public int track3_scaling;
-        public int track4_scaling;
+        public int track1_scaling = 10;
+        public int track2_scaling = 50;
+        public int track3_scaling = 100;
+        public int track4_scaling = 50;
         public int GetScaling()
         {
             if(GameSetting.trackname == "Track1")

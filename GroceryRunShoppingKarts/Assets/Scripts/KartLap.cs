@@ -49,7 +49,7 @@ public class KartLap : MonoBehaviour
                     Time.timeScale = 0f;
                     finished = true;
                 }
-                if (Input.anyKeyDown)
+                else if (Input.anyKeyDown)
                 {
                     Time.timeScale = 1f;
                     level.FadeToNextLevel();

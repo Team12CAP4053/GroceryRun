@@ -10,6 +10,8 @@ TagManager:
   - Coin
   - Leonardo
   - Checkpoint
+  - PlayUI
+  - PauseUI
   layers:
   - Default
   - TransparentFX
