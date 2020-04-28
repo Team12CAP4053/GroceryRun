@@ -754,7 +754,7 @@ MonoBehaviour:
   - {fileID: 2787187463099948819}
   m_CentreOfMassOffset: {x: 0, y: 0, z: 0}
   m_MaximumSteerAngle: 25
-  m_SteerHelper: 0.644
+  m_SteerHelper: 1
   m_TractionControl: 1
   m_FullTorqueOverAllWheels: 2500
   m_ReverseTorque: 500
@@ -798,12 +798,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d963df58504b69045b8d0d746ba6f777, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_CautiousSpeedFactor: 0.05
+  m_CautiousSpeedFactor: 0.304
   m_CautiousMaxAngle: 50
-  m_CautiousMaxDistance: 100
+  m_CautiousMaxDistance: 50
   m_CautiousAngularVelocityFactor: 30
   m_SteerSensitivity: 0.05
-  m_AccelSensitivity: 0.04
+  m_AccelSensitivity: 0.58
   m_BrakeSensitivity: 1
   m_LateralWanderDistance: 3
   m_LateralWanderSpeed: 0.1
@@ -7517,7 +7517,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8817568723061878783}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1

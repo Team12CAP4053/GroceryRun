@@ -13,9 +13,11 @@ public class KartLap : MonoBehaviour
     public Text continueText;
     public Text finishText;
     public Text placementText;
+    private bool finished;
     // Start is called before the first frame update
     void Start()
     {
+        finished = false;
         lapIndex = 0;
         checkpointIndex = 0;
         foreach (GameObject obj in GameObject.FindGameObjectsWithTag("Checkpoint"))
@@ -42,8 +44,14 @@ public class KartLap : MonoBehaviour
                 placementText.text = gameObject.GetComponent<PlayerPosition>().place.text;
 
                 placementText.gameObject.SetActive(true);
+                if (!finished)
+                {
+                    Time.timeScale = 0f;
+                    finished = true;
+                }
                 if (Input.anyKeyDown)
                 {
+                    Time.timeScale = 1f;
                     level.FadeToNextLevel();
                 }
         }

@@ -31,17 +31,17 @@ public class AIPathFinding : MonoBehaviour
         position = gameObject.GetComponent<Transform>().position;
         topSpeed = carController.MaxSpeed;
         positionTime = path.path.GetClosestTimeOnPath(position);
-        if(currentSpeed < 30)
+        if(currentSpeed < 20)
         {
             waypoint.transform.position = path.path.GetPointAtTime(positionTime + (0.2f / mapScaling));
         }
-        else if(currentSpeed < topSpeed * 0.6 && currentSpeed > 30)
+        else if(currentSpeed < topSpeed * 0.3 && currentSpeed > 20)
         {
-            waypoint.transform.position = path.path.GetPointAtTime(positionTime + (0.4f / mapScaling));
+            waypoint.transform.position = path.path.GetPointAtTime(positionTime + (0.6f / mapScaling));
         }
         else
         {
-            waypoint.transform.position = path.path.GetPointAtTime(positionTime + (0.2f / mapScaling));
+            waypoint.transform.position = path.path.GetPointAtTime(positionTime + (0.4f / mapScaling));
         }
     }
 
